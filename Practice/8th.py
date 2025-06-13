@@ -1,9 +1,10 @@
-
-print("Yes or No")
-ans = input()
-while ans.lower() == "yes":
-    print("Do again")
-    print("Yes or No")
-    ans = input()
-    
-print("You've escaped")
+while True:
+    ans = input("Yes or No: ").strip().lower()
+    if ans == "break":
+        print("cheater")
+        break
+    elif ans == "yes":
+        print("Do again")
+    else:
+        print("You've escaped")
+        break
