@@ -9,4 +9,7 @@ def score():
     return sum
 
 result = score()
-print(result)
+temp = []
+for c in text:
+    temp.append(c)
+print("".join(temp))
